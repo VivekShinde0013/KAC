@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalptaru Agro Chemicals & Fertilizers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background: url('https://images.unsplash.com/photo-1596199050105-6d5d32222916?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat fixed;
+      min-height: 100vh;
+      color: #fff;
+    }
+    nav.navbar {
+      background-color: rgba(0, 108, 51, 0.9);
+    }
+    .navbar-brand.site-title {
+      font-size: 2rem;
+      font-weight: 600;
+      white-space: nowrap;
+      color: #fff;
+    }
+    nav.navbar a.nav-link {
+      color: #fff !important;
+      margin-right: 1rem;
+    }
+    nav.navbar a.nav-link:hover {
+      color: #ffd700 !important;
+    }
+    section {
+      padding: 60px 30px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    h1.home-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: black;
+    }
+    p.home-subtitle {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: black;
+    }
+    h2, h4, h5 {
+      color: #ffd700;
+    }
+    .section-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 30px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .section-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+    footer {
+      background: rgba(0, 108, 51, 0.9);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+    .service-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      height: 100%;
+      color: #fff;
+    }
+    .service-card h4 {
+      color: rgb(0, 255, 149);
+    }
+    .aim-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .aim-card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .carousel-item img {
+      max-height: 500px;
+      width: auto;
+      margin: 0 auto;
+      display: block;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand site-title" href="#">Kalptaru Agro Chemicals and Fertilizers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aims">Our Aims</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" style="background-color: rgb(234, 176, 105); padding-top: 120px; padding-bottom: 120px;">
+    <div class="container pb-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+          <h1 class="home-title">Kalptaru Agro Chemicals and Fertilizers</h1>
+          <p class="home-subtitle"><strong>Nurturing Growth, Empowering Farmers.</strong></p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="tropical-t2.png" alt="Palm Tree" class="img-fluid" style="max-width: 100%; height: auto; max-height: 300px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+        <div class="col">
+          <div class="service-card">
+            <h4>Agrochemical Supply</h4>
+            <p>We offer a wide selection of government-approved pesticides, insecticides, fungicides, and herbicides that protect crops from harmful pests and diseases.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service-card">
+            <h4>Fertilizer Distribution</h4>
+            <p>We provide a full range of fertilizers including Urea, DAP, NPK, Micronutrients, and Organic Manure to enhance soil fertility and crop productivity.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service-card">
+            <h4>Certified Seeds</h4>
+            <p>We stock high-quality, high-germination seeds suited for various crops and regional climates.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service-card">
+            <h4>Crop Problem Diagnosis & Recommendation</h4>
+            <p>Farmers can describe crop symptoms, and we offer personalized product recommendations based on expert knowledge and field experience.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service-card">
+            <h4>Expert Agronomy Support</h4>
+            <p>Our team provides on-field guidance, seasonal crop planning, and sustainable farming advice to maximize yield and efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="aims">
+    <div class="container">
+      <h2 class="text-center mb-5">We Are Farmers</h2>
+      <div class="aim-card">
+        <h4>Empowering Farmers</h4>
+        <p>
+            Our foremost aim is to equip farmers with reliable, high-quality products and expert guidance to help them make confident farming decisions.
+        </p>
+      </div>
+      <div class="aim-card">
+        <h4>Enhancing Crop Productivity</h4>
+        <p>
+            Through the right fertilizers, pesticides, and crop management advice, we help farmers achieve better output per acre.
+        </p>
+      </div>
+      <div class="aim-card">
+        <h4>Bridging Traditional and Modern Farming</h4>
+        <p>
+            We aim to combine age-old farming wisdom with new-age technologies to maximize yields while reducing risks.
+        </p>
+      </div>
+      <div class="aim-card">
+        <h4>Personalized Recommendations</h4>
+        <p>
+            Our goal is to provide tailor-made product suggestions based on specific crop issues, improving efficiency and reducing waste.
+        </p>
+      </div>
+      <div class="aim-card">
+        <h4>Building Trust and Long-Term Partnerships</h4>
+        <p>
+            We strive to be more than a seller — a true partner in every farmer’s journey, season after season.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div id="aboutCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img src="C:/General/KAC website/1.jpeg" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="C:/General/KAC website/11.jpeg" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="C:/General/KAC website/6.jpeg" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="C:/General/KAC website/5.jpeg" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="C:/General/KAC website/7.jpeg" class="d-block">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <!--<h2 class="text-center mb-4">About Us</h2> -->
+      <h4>Real Results. Real Trust.</h4>
+        <p>These images reflect the success stories of farmers who use our products and trust our guidance. At Kalptaru Agro Chemicals & Fertilizers, we take pride in supporting healthy, high-yielding crops through quality fertilizers, pesticides, and personalized crop care solutions.
+        With a strong foundation in agriculture and deep knowledge of local farming needs, our shop has become a reliable destination for thousands of farmers. We offer certified agro products, genuine advice, and complete support — from sowing to harvesting.
+        Every field shown here tells a story of dedication, trust, and the right agricultural support. We’re not just a seller — we’re a partner in growth.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center mb-5" style="font-weight: bold; font-size: 35px;">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+            <p style="font-size: 25px;">If you have any questions or need assistance, feel free to reach out to us:</p>
+            <ul class="list-unstyled">
+                <li style="font-size: 22px;"><strong>Email:</strong> <a href="mailto:kalpataruagrochem@gmail.com">kalpataruagrochem@gmail.com</a></li>
+            </ul>
+            <p style="font-size: 22px;">Mobile Number: <strong>+91 70597 05920 / +91 70203 40293</strong></p>
+            <p style="font-size: 22px;"><strong>Address:</strong> Near Jivhala Dhaba, karad-Vita Road, Karad, 415124</p>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2025 Kalptaru Agro Chemicals and Fertilizers. All Rights Reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const aimCards = document.querySelectorAll('.aim-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+    aimCards.forEach(card => observer.observe(card));
+  </script>
+</body>
+</html>
